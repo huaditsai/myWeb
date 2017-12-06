@@ -1,0 +1,324 @@
+@-webkit-keyframes blink {
+  0%,
+    88%,
+    94%,
+    100% {
+    height: 12px;
+    margin-top: 0;
+  }
+  91%,
+    97% {
+    height: 0;
+    margin-top: 6px;
+  }
+}
+@-moz-keyframes blink {
+  0%,
+    88%,
+    94%,
+    100% {
+    height: 12px;
+    margin-top: 0;
+  }
+  91%,
+    97% {
+    height: 0;
+    margin-top: 6px;
+  }
+}
+@-o-keyframes blink {
+  0%,
+    88%,
+    94%,
+    100% {
+    height: 12px;
+    margin-top: 0;
+  }
+  91%,
+    97% {
+    height: 0;
+    margin-top: 6px;
+  }
+}
+@keyframes blink {
+  0%,
+    88%,
+    94%,
+    100% {
+    height: 12px;
+    margin-top: 0;
+  }
+  91%,
+    97% {
+    height: 0;
+    margin-top: 6px;
+  }
+}
+@-webkit-keyframes drop {
+  0%,
+    65% {
+    top: 10px;
+  }
+  100% {
+    top: 105px;
+  }
+}
+@-moz-keyframes drop {
+  0%,
+    65% {
+    top: 10px;
+  }
+  100% {
+    top: 105px;
+  }
+}
+@-o-keyframes drop {
+  0%,
+    65% {
+    top: 10px;
+  }
+  100% {
+    top: 105px;
+  }
+}
+@keyframes drop {
+  0%,
+    65% {
+    top: 10px;
+  }
+  100% {
+    top: 105px;
+  }
+}
+@-webkit-keyframes puddle {
+  0%,
+    30%,
+    60% {
+    width: 55px;
+    left: 76%;
+  }
+  40% {
+    width: 60px;
+    left: 75%;
+  }
+}
+@-moz-keyframes puddle {
+  0%,
+    30%,
+    60% {
+    width: 55px;
+    left: 76%;
+  }
+  40% {
+    width: 60px;
+    left: 75%;
+  }
+}
+@-o-keyframes puddle {
+  0%,
+    30%,
+    60% {
+    width: 55px;
+    left: 76%;
+  }
+  40% {
+    width: 60px;
+    left: 75%;
+  }
+}
+@keyframes puddle {
+  0%,
+    30%,
+    60% {
+    width: 55px;
+    left: 76%;
+  }
+  40% {
+    width: 60px;
+    left: 75%;
+  }
+}
+body {
+  margin: 0;
+  background: #fff;
+  overflow: hidden;
+}
+body .icecream {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 200px;
+  height: 440px;
+  margin-left: -100px;
+  margin-top: -220px;
+}
+body .icecream .head {
+  width: 100%;
+  height: 310px;
+  border-radius: 100px 100px 0 30px;
+  background: #ffb0a6;
+}
+body .icecream .head .bite {
+  position: absolute;
+  left: 20%;
+  top: -5px;
+  width: 40px;
+  height: 50px;
+  border-radius: 50%;
+  background: #fff;
+}
+body .icecream .head .bite:nth-child(2) {
+  left: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+}
+body .icecream .head .stripContainer {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  width: 116px;
+  height: 140px;
+  margin-left: -58px;
+}
+body .icecream .head .stripContainer .strip {
+  float: left;
+  width: 40px;
+  height: 100%;
+  border-radius: 100px;
+  background: #ff998d;
+}
+body .icecream .head .stripContainer .strip:last-child {
+  float: right;
+}
+body .icecream .head .eyeContainer {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  width: 80px;
+  height: 12px;
+  margin-left: -40px;
+}
+body .icecream .head .eyeContainer .eye {
+  float: left;
+  width: 12px;
+  height: 100%;
+  border-radius: 50%;
+  background: #ef988f;
+  -webkit-animation: blink 3s infinite linear;
+  -moz-animation: blink 3s infinite linear;
+  -o-animation: blink 3s infinite linear;
+  animation: blink 3s infinite linear;
+}
+body .icecream .head .eyeContainer .eye:last-child {
+  float: right;
+}
+body .icecream .head .mouth {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 40px;
+  height: 20px;
+  margin-left: -20px;
+  border-radius: 0 0 100px 100px;
+  overflow: hidden;
+  background: #ef988f;
+}
+body .icecream .head .mouth .tongue {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  width: 80%;
+  margin-left: -40%;
+  height: 70%;
+  border-radius: 100px 100px 0 0;
+  background: #fec3bb;
+}
+body .icecream .head .meltContainer {
+  position: absolute;
+  right: 0;
+  bottom: 26.1%;
+  width: 56px;
+  height: 15px;
+  background: #ffb0a6;
+}
+body .icecream .head .meltContainer .drip {
+  float: left;
+  width: 14px;
+  height: 45px;
+  background: #ffb0a6;
+  border-radius: 0 0 100px 100px;
+}
+body .icecream .head .meltContainer .drip:nth-child(1) {
+  border-radius: 0 100px 0 0;
+  background: #fff;
+}
+body .icecream .head .meltContainer .drip:nth-child(2):before, body .icecream .head .meltContainer .drip:nth-child(4):before {
+  position: absolute;
+  top: 10px;
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #ffb0a6;
+  -webkit-animation: drop 3s infinite linear;
+  -moz-animation: drop 3s infinite linear;
+  -o-animation: drop 3s infinite linear;
+  animation: drop 3s infinite linear;
+}
+body .icecream .head .meltContainer .drip:nth-child(4):before {
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+body .icecream .head .meltContainer .drip:nth-child(3) {
+  margin-top: 8px;
+  height: 100%;
+  border-radius: 100px 100px 0 0;
+  background: #fff;
+}
+body .icecream .head .meltContainer .drip:last-child {
+  height: 25px;
+  float: right;
+}
+body .icecream .stick {
+  position: relative;
+  left: 50%;
+  width: 34px;
+  margin-left: -17px;
+  height: 115px;
+  border-radius: 0 0 30px 30px;
+  z-index: 1;
+  background: #fcd6ad;
+}
+body .icecream .stick:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 14px;
+  background: #efcba4;
+}
+body .icecream .shadow {
+  position: absolute;
+  left: 50%;
+  width: 76px;
+  margin-top: -15px;
+  margin-left: -38px;
+  height: 25px;
+  border-radius: 50%;
+  background: #e7e7e6;
+}
+body .icecream .puddle {
+  position: absolute;
+  left: 76%;
+  width: 55px;
+  margin-top: -15px;
+  height: 25px;
+  border-radius: 50%;
+  background: #ffb0a6;
+  -webkit-animation: puddle 1.5s infinite linear;
+  -moz-animation: puddle 1.5s infinite linear;
+  -o-animation: puddle 1.5s infinite linear;
+  animation: puddle 1.5s infinite linear;
+  -webkit-animation-delay: 2.4s;
+  animation-delay: 2.4s;
+}
