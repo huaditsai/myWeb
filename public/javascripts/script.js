@@ -1,16 +1,16 @@
-$(function() {
-    
-    $('.skills-prog li').find('.skills-bar').each(function(i) {
+$(function () {
+
+    $('.skills-prog li').find('.skills-bar').each(function (i) {
         $(this).find('.bar').delay(i * 150).animate({
-        width: $(this).parents().attr('data-percent') + '%'
-        }, 1000, 'linear', function() {
+            width: $(this).parents().attr('data-percent') + '%'
+        }, 1000, 'linear', function () {
             return $(this).css({
                 'transition-duration': '.5s'
             });
         });
     });
 
-    $('.skills-soft li').find('svg').each(function(i) {
+    $('.skills-soft li').find('svg').each(function (i) {
         var c, cbar, circle, percent, r;
         circle = $(this).children('.cbar');
         r = circle.attr('r');
@@ -23,7 +23,7 @@ $(function() {
         });
         circle.delay(i * 150).animate({
             strokeDashoffset: cbar
-        }, 1000, 'linear', function() {
+        }, 1000, 'linear', function () {
             return circle.css({
                 'transition-duration': '.3s'
             });
@@ -31,12 +31,12 @@ $(function() {
 
         $(this).siblings('small').prop('Counter', 0).delay(i * 150).animate({
             Counter: percent
-            }, {
-                duration: 1000,
-                step: function(now) {
+        }, {
+            duration: 1000,
+            step: function (now) {
                 return $(this).text(Math.ceil(now) + '%');
-                }
-            });
+            }
+        });
     });
 
 });
