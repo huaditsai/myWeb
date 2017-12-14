@@ -451,7 +451,7 @@ h3 {
 .resume .func .interests-items {
     box-sizing: border-box;
     padding: 15px;
-    width: 100%;
+    /* width: 100%; */
     border: 1px solid #cdcdcd;
     text-align: center;
     display: flex;
@@ -475,23 +475,11 @@ h3 {
 
 .resume .func .interests-items div i {
     font-size: 45px;
-    width: 60px;
-    height: 60px;
+    /* width: 60px;
+    height: 60px; */
     line-height: 60px;
     color: #6AB3FF;
     transition-duration: 0.3s;
-}
-
-.resume .func .interests-items div i.guitar {
-    display: block;
-    margin: 0 auto;
-}
-
-.resume .func .interests-items div i.guitar svg {
-    width: 50px;
-    height: 50px;
-    margin-top: 5px;
-    fill: #6AB3FF;
 }
 
 .resume .func .interests-items div span {
